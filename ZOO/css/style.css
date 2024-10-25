@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicione isso para garantir que o padding e o border sejam incluídos na largura e altura totais */
+}
+
+.header {
+    background-color: #7D19CA; /* Cor roxa */
+    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Alinha os itens no mesmo eixo */
+    justify-content: space-between; /* Espaça os elementos no cabeçalho */
+    align-items: center; /* Alinha verticalmente os elementos */
+}
+
+header h1 {
+    color: white; /* Cor do texto */
+    font-size: 36px; /* Tamanho da fonte */
+    margin: 0; /* Remove qualquer margem padrão */
+}
+
+nav a {
+    color: white; /* Cor dos links */
+    font-size: 18px; /* Tamanho do texto dos links */
+    margin-left: 20px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.img1 {
+    height: 50px;
+    width: 50px;
+}
