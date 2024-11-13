@@ -6,34 +6,25 @@
 
 <img src="imagem.png" alt="Exemplo imagem">
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> Este é um projeto de uma API de CRUD para um zoológico, desenvolvida em Spring Boot. A aplicação permite adicionar, visualizar, atualizar e remover registros de animais em um zoológico.
 
-### Ajustes e melhorias
-
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
-
-- [x] Tarefa 1
-- [x] Tarefa 2
-- [x] Tarefa 3
-- [ ] Tarefa 4
-- [ ] Tarefa 5
 
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-- Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
-- Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
-- Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
+- Você instalou a versão mais recente do `<Java>`.
+- Você tem uma máquina `<Windows / Linux / Mac>`.
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando <Projeto-Integrador>
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
+Para instalar o <Projeto-Integrador>, siga estas etapas:
 
 Linux e macOS:
 
 ```
-<comando_de_instalação>
+<[comando_de_instalação]cd Downloads>
+<[comando_de_instalação](https://github.com/JoaoNascimento1802/Projeto-Integrador)>
 ```
 
 Windows:
