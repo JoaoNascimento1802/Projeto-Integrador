@@ -18,4 +18,10 @@ public class Animal {
     @Column(nullable = false)
     private String especie;
 
+    @Column(nullable = false)
+    private String genero;
+
+    @Column(nullable = false)
+    private int idade;
+
 }
