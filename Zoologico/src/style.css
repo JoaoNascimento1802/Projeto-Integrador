@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: #8b5a60;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.container {
+    background-color: #ffe4c4;
+    margin: 200px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.animal-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.animal-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.animal-info {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.Editar{
+    background-color: yellow;
+}
+
+.Excluir{
+    background-color: red;
+}
+
+.animal-actions img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.add-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    width: 50px;
+}
