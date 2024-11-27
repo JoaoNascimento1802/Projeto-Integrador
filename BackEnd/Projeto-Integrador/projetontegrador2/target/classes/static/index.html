@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Zoológico</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+<header>
+    <h1>Gerenciamento do Zoológico</h1>
+</header>
+<main>
+    <section id="form-section">
+        <h2>Adicionar/Editar Animal</h2>
+        <div id="message-box" class="hidden"></div> <!-- Caixa de mensagem -->
+        <form id="animal-form">
+            <input type="hidden" id="animal-id">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="especie">Espécie:</label>
+            <input type="text" id="especie" required>
+
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required>
+
+            <label for="image">Imagem:</label>
+            <input type="file" id="image" accept="image/*">
+
+            <button type="submit">Salvar</button>
+        </form>
+        <div id="preview-container" class="hidden">
+            <h3>Pré-visualização da Imagem:</h3>
+            <img id="image-preview" class="hidden" alt="Pré-visualização da imagem">
+        </div>
+    </section>
+
+    <section id="table-section">
+        <h2>Lista de Animais</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Espécie</th>
+                <th>Gênero</th>
+                <th>Idade</th>
+                <th>Imagem</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody id="animal-list"></tbody>
+        </table>
+    </section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
