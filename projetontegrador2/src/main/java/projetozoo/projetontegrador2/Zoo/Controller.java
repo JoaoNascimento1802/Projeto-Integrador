@@ -23,7 +23,7 @@ public class Controller {
     }
 
     @PostMapping
-    @ResponseStatus
+    @ResponseStatus(HttpStatus.CREATED)
     public Animal addAnimal(@RequestBody Animal animal) {
         return repository.save(animal);
     }
