@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+html, body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    width: 100%; /* Garante que o body ocupe 100% da largura */
+}
+
+body {
+    background-color: #F9E4CF; /* Cor de fundo */
+    font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Usando flexbox para o layout do body */
+    flex-direction: column; /* Direção da coluna para empurrar o footer para baixo */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
+}
+
+header {
+    display: flex; /* Usando flexbox para o layout */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Espaça os itens horizontalmente */
+    background-color: #814F4F; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Corrigido o espaçamento interno */
+}
+
+.hidden {
+    display: none; /* Oculta o elemento */
+}
+
+.animal-list button.edit,
+.animal-list button.delete,
+.btn-add,
+.btn-cancel {
+    padding: 8px 12px; /* Ajustado para maior conforto em telas menores */
+    font-size: 14px; /* Tamanho da fonte ajustado */
+}
+
+.animal-list button.edit {
+    background-color: #007BFF; /* Nova cor do botão "Editar" (Azul) */
+    color: white; /* Cor do texto */
+    border: 1px solid #0056b3; /* Borda do botão "Editar" */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor do fundo */
+}
+
+.animal-list button.edit:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse no botão "Editar" */
+}
+
+.animal-list button.delete {
+    background-color: #dc3545; /* Nova cor do botão "Excluir" (Vermelho) */
+    color: white; /* Cor do texto */
+    border: 1px solid #c82333; /* Borda do botão "Excluir" */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor do fundo */
+}
+
+.animal-list button.delete:hover {
+    background-color: #c82333; /* Cor ao passar o mouse no botão "Excluir" */
+}
+
+/* Estilização da tabela */
+.animal-list table {
+    width: 100%; /* Largura total da tabela */
+    border-collapse: collapse; /* Colapsa bordas da tabela */
+}
+
+.animal-list th, .animal-list td {
+    border: 1px solid #814F4F; /* Borda das células com a mesma cor do cabeçalho */
+    padding: 12px; /* Aumentado o preenchimento das células para mais espaço */
+    text-align: left; /* Alinhamento do texto */
+    font-size: 14px; /* Tamanho da fonte das células */
+}
+
+.animal-list th {
+    background-color: #814F4F; /* Cor de fundo do cabeçalho da tabela */
+    color: white; /* Cor do texto do cabeçalho */
+}
+
+.animal-list tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo para linhas pares */
+}
+
+.animal-list tr:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+
+.animal-list img {
+    max-width: 50px; /* Limita a largura das imagens */
+    max-height: 50px; /* Limita a altura das imagens */
+}
+
+.profile-image img {
+    border-radius: 50%; /* Torna a imagem redonda */
+    width: 50px;
+    height: 50px; /* Altura da imagem */
+}
+
+h1 {
+    margin: 0; /* Remove margem do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+}
+
+.container {
+    flex: 1; /* Faz o contêiner ocupar o espaço restante */
+    background-color: white; /* Cor de fundo do contêiner */
+    padding: 20px 15px; /* Ajustado o preenchimento para telas menores */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra do contêiner */
+    max-width: 800px; /* Largura máxima para o contêiner */
+    margin: 20px auto; /* Centraliza o contêiner na tela com menos margem */
+}
+
+.animal-list-section {
+    margin-bottom: 20px; /* Espaço abaixo da seção de lista de animais */
+}
+
+.table-title {
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Tamanho da fonte do título da tabela */
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    color: #333; /* Cor do texto */
+}
+
+.btn-add {
+    background-color: #4CAF50; /* Cor do botão "Adicionar" */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    margin-bottom: 15px; /* Espaço abaixo do botão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor do fundo */
+    flex: 1; /* Faz o botão ocupar o mesmo espaço */
+}
+
+.btn-add:hover {
+    background-color: #45a049; /* Cor ao passar o mouse no botão "Adicionar" */
+}
+
+.btn-cancel {
+    background-color: #f44336; /* Cor do botão "Cancelar" */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    flex: 1; /* Faz o botão ocupar o mesmo espaço */
+    margin-left: 10px; /* Espaço entre os botões */
+}
+
+.btn-cancel:hover {
+    background-color: #d32f2f; /* Cor ao passar o mouse no botão "Cancelar" */
+}
+
+#message-box {
+    margin-bottom: 15px; /* Espaçamento inferior para a mensagem */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 4px; /* Cantos arredondados */
+    display: none; /* Inicialmente oculto */
+}
+
+#message-box.success {
+    background-color: #d4edda; /* Cor de fundo para sucesso */
+    color: #155724; /* Cor do texto para sucesso */
+}
+
+#message-box.error {
+    background-color: #f8d7da; /* Cor de fundo para erro */
+    color: #721c24; /* Cor do texto para erro */
+}
+
+/* Estilização do formulário de adicionar animal */
+.form-section {
+    margin-top: 20px; /* Espaço acima da seção do formulário */
+    padding: 15px; /* Preenchimento da seção do formulário */
+    border: 1px solid #ccc; /* Borda da seção do formulário */
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: #f9f9f9; /* Cor de fundo da seção do formulário */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaço abaixo de cada grupo de formulário */
+}
+
+.form-group label {
+    display: block; /* Faz o rótulo ocupar toda a largura */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+    font-weight: bold; /* Rótulo em negrito */
+}
+
+.form-group input {
+    width: calc(100% - 20px); /* Largura total do campo de entrada, ajustado para o padding */
+    padding: 10px; /* Preenchimento do campo de entrada */
+    border: 1px solid #ccc; /* Borda do campo de entrada */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Responsividade para garantir ajuste em dispositivos menores */
+@media (max-width: 400px) {
+    .container {
+        width: 90%; /* Largura do contêiner em dispositivos menores */
+        padding: 15px; /* Ajusta o preenchimento */
+    }
+
+    .buttons button {
+        padding: 8px; /* Ajusta o preenchimento dos botões */
+        font-size: 12px; /* Tamanho da fonte dos botões */
+    }
+
+    .form-group input {
+        padding: 5px; /* Ajusta o preenchimento dos campos de entrada */
+        font-size: 12px; /* Tamanho da fonte dos campos de entrada */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamanho da fonte do título ajustado para telas menores */
+    }
+
+    .table-title {
+        font-size: 16px; /* Tamanho da fonte do título da tabela ajustado */
+    }
+
+    .animal-list th, .animal-list td {
+        font-size: 12px; /* Tamanho da fonte das células ajustado */
+        padding: 10px; /* Ajusta o preenchimento das células */
+    }
+}
+
+footer {
+    background-color: #814F4F; /* Mesma cor do cabeçalho */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Espaçamento interno */
+    width: 100%; /* Corrigido */
+    position: relative; /* Para garantir que o footer fique no final da página */
+    bottom: 0; /* Posiciona o footer na parte inferior */
+}
+
+.footer-content {
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.github-link {
+    color: white; /* Cor do link */
+    font-size: 24px; /* Tamanho do ícone */
+    text-decoration: none; /* Remove sublinhado do link */
+    transition: color 0.3s; /* Transição suave para a cor */
+    display: flex; /* Flexbox para alinhar o ícone e o texto */
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+}
+
+.github-link i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.github-link span {
+    font-size: 16px; /* Tamanho do texto */
+}
+
+.github-link:hover {
+    color: #A66A6A; /* Cor ao passar o mouse */
+}
+
+/* Media Query para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: flex-start; /* Alinha itens à esquerda */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    #crudButtonHeader {
+        margin-top: 10px; /* Espaço acima do botão */
+    }
+
+    main {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza o conteúdo */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    .monkey-image {
+        width: 100%; /* Ajusta a imagem para ocupar 100% em telas menores */
+        margin-bottom: 20px; /* Espaço abaixo da imagem */
+    }
+
+    .monkey-image img {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .text-content {
+        padding-left: 0; /* Remove o espaço à esquerda no texto */
+        text-align: center; /* Centraliza o texto em telas menores */
+    }
+
+    .text-content h1 {
+        font-size: 24px; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .text-content p {
+        font-size: 16px; /* Reduz o tamanho do texto em telas menores */
+    }
+
+    footer {
+        padding: 10px 0; /* Ajusta o padding do footer */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+    }
+
+    .github-link {
+        font-size: 20px; /* Ajusta o tamanho do ícone em telas menores */
+    }
+
+    /* Media Query para dispositivos móveis em pé */
+    @media (max-width: 400px) and (orientation: portrait) {
+        header {
+            flex-direction: column; /* Altera a direção do cabeçalho para coluna */
+            align-items: flex-start; /* Alinha itens à esquerda */
+            padding: 10px; /* Ajusta o padding */
+        }
+
+        .container {
+            width: 90%; /* Largura do contêiner em dispositivos menores */
+            padding: 15px; /* Ajusta o preenchimento */
+        }
+
+        .animal-list button.edit,
+        .animal-list button.delete,
+        .btn-add,
+        .btn-cancel {
+            font-size: 12px; /* Tamanho da fonte ajustado para botões */
+            padding: 6px 10px; /* Ajusta o preenchimento dos botões */
+        }
+
+        .animal-list th, .animal-list td {
+            font-size: 12px; /* Tamanho da fonte das células ajustado */
+            padding: 8px; /* Ajusta o preenchimento das células */
+        }
+
+        h1 {
+            font-size: 20px; /* Tamanho da fonte do título ajustado para telas menores */
+        }
+
+        .table-title {
+            font-size: 16px; /* Tamanho da fonte do título da tabela ajustado */
+        }
+
+        .form-group input {
+            padding: 8px; /* Ajusta o preenchimento dos campos de entrada */
+            font-size: 12px; /* Tamanho da fonte dos campos de entrada */
+        }
+    }
+}
