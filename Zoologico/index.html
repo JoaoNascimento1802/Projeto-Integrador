@@ -1,73 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Animais</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Gerenciamento do Zoológico</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Adicione esta linha para o Font Awesome -->
 </head>
 <body>
-
-<div class="header">
-    <img src="/src/img/Tela perfil.png" alt="Avatar">
-    <h1>João Emanuel</h1>
-</div>
-
-<div class="container">
-    <div class="animal-row">
-        <img src="/src/img/Girafa.webp" alt="Girafa">
-        <div class="animal-info">
-            <span>Girafa</span>
-            <span>Fêmea</span>
-            <span>22</span>
-        </div>
-        <div class="animal-actions">
-            <img class="Excluir" src="/src/img/lixo.png.png" alt="Excluir">
-            <img class="Editar" src="/src/img/lapis.png" alt="Editar">
-        </div>
+<header>
+    <div class="profile-image">
+        <img src="assets/Tela perfil.png" alt="Foto de Perfil" />
     </div>
+    <h1>Gerenciamento do Zoológico</h1>
+    <a href="tabela.html" id="crudButtonHeader" class="btn">Acessar CRUD de Animais</a>
+</header>
 
-    <div class="animal-row">
-        <img src="/src/img/Elefante.jpg" alt="Elefante">
-        <div class="animal-info">
-            <span>Elefante</span>
-            <span>Macho</span>
-            <span>20</span>
-        </div>
-        <div class="animal-actions">
-            <img class="Excluir" src="/src/img/lixo.png.png" alt="Excluir">
-            <img class="Editar" src="/src/img/lapis.png" alt="Editar">
-        </div>
+<main>
+    <div class="monkey-image">
+        <img src="assets/Macaco_pagina-removebg-preview.png" alt="Macaco" />
     </div>
-
-    <div class="animal-row">
-        <img src="/src/img/Leopardo.jpg" alt="Leopardo">
-        <div class="animal-info">
-            <span>Leopardo</span>
-            <span>Macho</span>
-            <span>16</span>
-        </div>
-        <div class="animal-actions">
-            <img class="Excluir" src="/src/img/lixo.png.png" alt="Excluir">
-            <img class="Editar" src="/src/img/lapis.png" alt="Editar">
-        </div>
+    <div class="text-content">
+        <h1>Bem-vindo à área do funcionário!</h1>
+        <p>Na área do funcionário do zoológico, a gestão dos animais é fundamental para o bem-estar das espécies e a eficiência do espaço. Aqui, os profissionais podem adicionar, remover e editar informações sobre os animais que habitam o zoológico.</p>
     </div>
+</main>
 
-    <div class="animal-row">
-        <img src="/src/img/Macaco.webp" alt="Macaco">
-        <div class="animal-info">
-            <span>Macaco</span>
-            <span>Fêmea</span>
-            <span>11</span>
-        </div>
-        <div class="animal-actions">
-            <img class="Excluir" src="/src/img/lixo.png.png" alt="Excluir">
-            <img class="Editar" src="/src/img/lapis.png" alt="Editar">
-        </div>
+<footer>
+    <div class="footer-content">
+        <a href="https://github.com/JoaoNascimento1802/Projeto-Integrador" target="_blank" class="github-link">
+            <i class="fab fa-github"></i> <!-- Ícone do GitHub -->
+            <span>Link do Projeto</span> <!-- Texto ao lado do ícone -->
+        </a>
     </div>
+</footer>
 
-    <button class="add-button">+</button>
-</div>
-
+<script src="js/jsfront.js"></script>
 </body>
 </html>
