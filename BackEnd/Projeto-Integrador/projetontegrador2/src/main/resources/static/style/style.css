@@ -1,107 +1,223 @@
+* {
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+html, body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    width: 100%; /* Garante que o body ocupe 100% da largura */
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #F9E4CF; /* Cor de fundo */
+    font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Usando flexbox para o layout do body */
+    flex-direction: column; /* Direção da coluna para empurrar o footer para baixo */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
 }
 
 header {
-    background-color: #2c3e50;
+    display: flex; /* Usando flexbox para o layout */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Espaça os itens horizontalmente */
+    background-color: #814F4F; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Corrigido o espaçamento interno */
+}
+
+.profile-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+#crudButtonHeader {
+    background-color: #524B4B;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#crudButtonHeader:hover {
+    background-color: #A66A6A;
     color: white;
-    padding: 1rem;
-    text-align: center;
 }
 
 main {
-    padding: 2rem;
-}
-
-h1, h2 {
-    margin-bottom: 1rem;
-}
-
-form {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    padding: 20px;
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    flex-direction: column; /* Muda para coluna em telas menores */
+    align-items: center; /* Centraliza o conteúdo */
 }
 
-form label {
-    font-weight: bold;
+.animal-list {
+    width: 100%; /* Largura total da tabela */
+    border-collapse: collapse; /* Colapsa bordas da tabela */
 }
 
-form input, form button {
-    padding: 0.5rem;
-    font-size: 1rem;
+.animal-list th, .animal-list td {
+    border: 1px solid #814F4F; /* Borda das células com a mesma cor do cabeçalho */
+    padding: 12px; /* Aumentado o preenchimento das células para mais espaço */
+    text-align: left; /* Alinhamento do texto */
+    font-size: 14px; /* Tamanho da fonte das células */
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
+.animal-list th {
+    background-color: #814F4F; /* Cor de fundo do cabeçalho da tabela */
+    color: white; /* Cor do texto do cabeçalho */
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+.animal-list tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo para linhas pares */
 }
 
-th, td {
-    padding: 0.5rem;
-    text-align: center;
+.animal-list tr:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
 }
 
-button {
-    cursor: pointer;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
+footer {
+    background-color: #814F4F; /* Mesma cor do cabeçalho */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Espaçamento interno */
+    width: 100%; /* Corrigido */
+    position: relative; /* Para garantir que o footer fique no final da página */
+    bottom: 0; /* Posiciona o footer na parte inferior */
 }
 
-button:hover {
-    background-color: #2980b9;
+.footer-content {
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
-#message-box {
-    margin-bottom: 1rem;
-    padding: 0.8rem;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
+.github-link {
+    color: white; /* Cor do link */
+    font-size: 24px; /* Tamanho do ícone */
+    text-decoration: none; /* Remove sublinhado do link */
+    transition: color 0.3s; /* Transição suave para a cor */
+    display: flex; /* Flexbox para alinhar o ícone e o texto */
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
 }
 
-#message-box.hidden {
-    display: none;
+.github-link i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
 
-#message-box.success {
-    color: #155724;
-    background-color: #d4edda;
-    border: 1px solid #c3e6cb;
+.github-link span {
+    font-size: 16px; /* Tamanho do texto */
 }
 
-#message-box.error {
-    color: #721c24;
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
+.github-link:hover {
+    color: #A66A6A; /* Cor ao passar o mouse */
 }
 
-#preview-container {
-    margin-top: 1rem;
+/* Media Query para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: flex-start; /* Alinha itens à esquerda */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    main {
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    .animal-list th, .animal-list td {
+        font-size: 12px; /* Tamanho da fonte das células ajustado */
+        padding: 10px; /* Ajusta o preenchimento das células */
+    }
+
+    footer {
+        padding: 10px 0; /* Ajusta o padding do footer */
+    }
 }
 
-#image-preview {
-    max-width: 100px;
-    max-height: 100px;
-    display: block;
-    margin-top: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
+@media (max-width: 400px) {
+    .container {
+        width: 90%; /* Largura do contêiner em dispositivos menores */
+        padding: 15px; /* Ajusta o preenchimento */
+    }
 
-#image-preview.hidden {
-    display: none;
+    .buttons button {
+        padding: 8px; /* Ajusta o preenchimento dos botões */
+        font-size: 12px; /* Tamanho da fonte dos botões */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamanho da fonte do título ajustado para telas menores */
+    }
+
+    .table-title {
+        font-size: 16px; /* Tamanho da fonte do título da tabela ajustado */
+    }
+
+    /* Media Query para dispositivos móveis em pé */
+    @media (max-width: 400px) and (orientation: portrait) {
+        header {
+            flex-direction: column; /* Altera a direção do cabeçalho para coluna */
+            align-items: flex-start; /* Alinha itens à esquerda */
+            padding: 10px; /* Ajusta o padding */
+        }
+
+        .profile-image {
+            width: 50px; /* Reduz a largura da imagem do perfil */
+            height: 50px; /* Reduz a altura da imagem do perfil */
+            margin-right: 10px; /* Reduz o espaço à direita */
+        }
+
+        header h1 {
+            font-size: 24px; /* Reduz o tamanho da fonte do título */
+        }
+
+        #crudButtonHeader {
+            padding: 6px 12px; /* Ajusta o padding do botão */
+            font-size: 12px; /* Reduz o tamanho da fonte do botão */
+        }
+
+        main {
+            padding: 10px; /* Ajusta o padding */
+        }
+
+        .animal-list th, .animal-list td {
+            font-size: 12px; /* Tamanho da fonte das células ajustado */
+            padding: 8px; /* Ajusta o preenchimento das células */
+        }
+
+        footer {
+            padding: 10px 0; /* Ajusta o padding do footer */
+        }
+
+        .footer-content {
+            flex-direction: column; /* Muda a direção para coluna em telas menores */
+        }
+
+        .github-link {
+            font-size: 20px; /* Ajusta o tamanho do ícone em telas menores */
+        }
+    }
 }
