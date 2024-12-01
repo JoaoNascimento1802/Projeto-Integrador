@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento do Zoológico</title>
+    <link rel="stylesheet" href="style/perfil.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="profile-image">
+        <img src="assets/Tela perfil.png" alt="Foto de Perfil" />
+    </div>
+    <h1>Gerenciamento do Zoológico</h1>
+    <a href="index.html" id="crudButtonHeader" class="btn">Início</a>
+</header>
+
+<div class="container">
+    <div class="animal-list-section">
+        <button id="showAddAnimalForm" class="btn-add">Adicionar Animal</button>
+        <div class="table-title">Animais Cadastrados</div>
+        <div class="animal-list">
+            <table>
+                <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Nome</th>
+                    <th>Espécie</th>
+                    <th>Gênero</th>
+                    <th>Idade</th>
+                    <th>Ações</th>
+                </tr>
+                </thead>
+                <tbody id="animal-list">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="addAnimalFormContainer" class="hidden form-section">
+        <div class="table-title">Adicionar Animal</div>
+        <div id="message-box" class="hidden"></div>
+        <form id="animal-form">
+            <input type="hidden" id="animal-id" name="animal-id"> <!-- Campo oculto para ID -->
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+            </div>
+            <div class="form-group">
+                <label for="especie">Espécie:</label>
+                <input type="text" id="especie" name="especie" placeholder="Digite a espécie" required>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite a idade" required>
+            </div>
+            <div class="form-group">
+                <label for="genero">Gênero:</label>
+                <input type="text" id="genero" name="genero" placeholder="Digite o gênero" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Imagem:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+                <div id="preview-container" class="hidden">
+                    <img id="image-preview" src="" alt="Pré-visualização da imagem" style="max-width: 200px; max-height: 200px;">
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="btn-add">Adicionar</button>
+                <button type="button" class="btn-cancel" id="cancelButton">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Footer adicionado -->
+<footer>
+    <div class="footer-content">
+        <a href="https://github.com/JoaoNascimento1802/Projeto-Integrador" target="_blank" class="github-link">
+            <i class="fab fa-github"></i> <!-- Ícone do GitHub -->
+            <span>Link do Projeto</span> <!-- Texto ao lado do ícone -->
+        </a>
+    </div>
+</footer>
+
+<script src="js/jsfront.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
