@@ -1,18 +1,20 @@
 * {
     box-sizing: border-box; /* Inclui padding e borda na largura total */
+    padding: 0;
+    margin: 0;
 }
 
 html, body {
+    height: 100%; /* Garante que o html e o body ocupem 100% da altura */
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove preenchimentos padrão */
     width: 100%; /* Garante que o body ocupe 100% da largura */
 }
 
+
 body {
     background-color: #F9E4CF; /* Cor de fundo */
     font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimento padrão */
     display: flex; /* Usando flexbox para o layout do body */
     flex-direction: column; /* Direção da coluna para empurrar o footer para baixo */
     min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
@@ -98,6 +100,35 @@ main {
     background-color: #ddd; /* Cor de fundo ao passar o mouse */
 }
 
+.filter-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-section .form-group {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.filter-section input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.btn-filter {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: #0056b3;
+}
+
 footer {
     background-color: #814F4F; /* Mesma cor do cabeçalho */
     color: white; /* Cor do texto */
@@ -106,6 +137,21 @@ footer {
     width: 100%; /* Corrigido */
     position: relative; /* Para garantir que o footer fique no final da página */
     bottom: 0; /* Posiciona o footer na parte inferior */
+}
+
+.btn-clear {
+    background-color: #f44336; /* Cor de fundo vermelho */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.btn-clear:hover {
+    background-color: #d32f2f; /* Cor de fundo ao passar o mouse */
 }
 
 .footer-content {
@@ -158,66 +204,35 @@ footer {
 }
 
 @media (max-width: 400px) {
-    .container {
-        width: 90%; /* Largura do contêiner em dispositivos menores */
-        padding: 15px; /* Ajusta o preenchimento */
+    .profile-image {
+        width: 50px; /* Reduz a largura da imagem do perfil */
+        height: 50px; /* Reduz a altura da imagem do perfil */
+        margin-right: 10px; /* Reduz o espaço à direita */
     }
 
-    .buttons button {
-        padding: 8px; /* Ajusta o preenchimento dos botões */
-        font-size: 12px; /* Tamanho da fonte dos botões */
+    header h1 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
     }
 
-    h1 {
-        font-size: 20px; /* Tamanho da fonte do título ajustado para telas menores */
+    #crudButtonHeader {
+        padding: 6px 12px; /* Ajusta o padding do botão */
+        font-size: 12px; /* Reduz o tamanho da fonte do botão */
     }
 
-    .table-title {
-        font-size: 16px; /* Tamanho da fonte do título da tabela ajustado */
+    .animal-list th, .animal-list td {
+        font-size: 12px; /* Tamanho da fonte das células ajustado */
+        padding: 8px; /* Ajusta o preenchimento das células */
     }
 
-    /* Media Query para dispositivos móveis em pé */
-    @media (max-width: 400px) and (orientation: portrait) {
-        header {
-            flex-direction: column; /* Altera a direção do cabeçalho para coluna */
-            align-items: flex-start; /* Alinha itens à esquerda */
-            padding: 10px; /* Ajusta o padding */
-        }
+    footer {
+        padding: 10px 0; /* Ajusta o padding do footer */
+    }
 
-        .profile-image {
-            width: 50px; /* Reduz a largura da imagem do perfil */
-            height: 50px; /* Reduz a altura da imagem do perfil */
-            margin-right: 10px; /* Reduz o espaço à direita */
-        }
+    .footer-content {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+    }
 
-        header h1 {
-            font-size: 24px; /* Reduz o tamanho da fonte do título */
-        }
-
-        #crudButtonHeader {
-            padding: 6px 12px; /* Ajusta o padding do botão */
-            font-size: 12px; /* Reduz o tamanho da fonte do botão */
-        }
-
-        main {
-            padding: 10px; /* Ajusta o padding */
-        }
-
-        .animal-list th, .animal-list td {
-            font-size: 12px; /* Tamanho da fonte das células ajustado */
-            padding: 8px; /* Ajusta o preenchimento das células */
-        }
-
-        footer {
-            padding: 10px 0; /* Ajusta o padding do footer */
-        }
-
-        .footer-content {
-            flex-direction: column; /* Muda a direção para coluna em telas menores */
-        }
-
-        .github-link {
-            font-size: 20px; /* Ajusta o tamanho do ícone em telas menores */
-        }
+    .github-link {
+        font-size: 20px; /* Ajusta o tamanho do ícone em telas menores */
     }
 }
