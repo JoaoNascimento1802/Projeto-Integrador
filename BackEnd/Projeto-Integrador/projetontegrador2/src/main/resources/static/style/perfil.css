@@ -11,8 +11,6 @@ html, body {
 body {
     background-color: #F9E4CF; /* Cor de fundo */
     font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimento padrão */
     display: flex; /* Usando flexbox para o layout do body */
     flex-direction: column; /* Direção da coluna para empurrar o footer para baixo */
     min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
@@ -25,6 +23,7 @@ header {
     background-color: #814F4F; /* Cor de fundo do cabeçalho */
     color: white; /* Cor do texto */
     padding: 10px 20px; /* Corrigido o espaçamento interno */
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
 }
 
 .hidden {
@@ -65,17 +64,24 @@ header {
     background-color: #c82333; /* Cor ao passar o mouse no botão "Excluir" */
 }
 
+/* Adicionando um contêiner para a tabela */
+.animal-list {
+    overflow-x: auto; /* Permite rolagem horizontal */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura */
+}
+
 /* Estilização da tabela */
 .animal-list table {
-    width: 100%; /* Largura total da tabela */
+    width: 100%; /* Garante que a tabela ocupe 100% do contêiner */
+    min-width: 800px; /* Define uma largura mínima para a tabela */
     border-collapse: collapse; /* Colapsa bordas da tabela */
 }
 
 .animal-list th, .animal-list td {
     border: 1px solid #814F4F; /* Borda das células com a mesma cor do cabeçalho */
-    padding: 12px; /* Aumentado o preenchimento das células para mais espaço */
+    padding: 8px; /* Reduzido o preenchimento das células */
     text-align: left; /* Alinhamento do texto */
-    font-size: 14px; /* Tamanho da fonte das células */
+    font-size: 12px; /* Tamanho da fonte das células reduzido */
 }
 
 .animal-list th {
@@ -199,7 +205,7 @@ h1 {
 .form-group input {
     width: calc(100% - 20px); /* Largura total do campo de entrada, ajustado para o padding */
     padding: 10px; /* Preenchimento do campo de entrada */
-    border: 1px solid #ccc; /* Borda do campo de entrada */
+    border: 1px solid #ccc ; /* Borda do campo de entrada */
     border-radius: 4px; /* Cantos arredondados */
 }
 
@@ -230,7 +236,7 @@ h1 {
 
     .animal-list th, .animal-list td {
         font-size: 12px; /* Tamanho da fonte das células ajustado */
-        padding: 10px; /* Ajusta o preenchimento das células */
+        padding: 8px; /* Ajusta o preenchimento das células */
     }
 }
 
@@ -322,6 +328,26 @@ footer {
 
     .github-link {
         font-size: 20px; /* Ajusta o tamanho do ícone em telas menores */
+    }
+
+    .filter-button {
+        background-color: #007BFF; /* Cor de fundo do botão de filtro (azul) */
+        color: white; /* Cor do texto */
+        padding: 10px 15px; /* Espaçamento interno */
+        border: none; /* Remove borda */
+        border-radius: 5px; /* Cantos arredondados */
+        cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+        transition: background-color 0.3s ease; /* Transição suave para a cor do fundo */
+        margin: 5px; /* Espaço entre os botões */
+    }
+
+    .filter-button:hover {
+        background-color: #0056b3; /* Cor ao passar o mouse no botão de filtro */
+    }
+
+    /* Estilização adicional para botões de filtro específicos, se necessário */
+    .filter-button.active {
+        background-color: #28a745; /* Cor para o botão ativo (verde) */
     }
 
     /* Media Query para dispositivos móveis em pé */
