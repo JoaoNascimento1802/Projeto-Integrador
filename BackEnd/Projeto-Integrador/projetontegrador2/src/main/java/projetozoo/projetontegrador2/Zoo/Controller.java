@@ -60,4 +60,19 @@ public class Controller {
             return ResponseEntity.notFound().build();
         }
     }
+
+    @GetMapping("/species/{species}")
+public ResponseEntity<List<Animal>> buscarPorEspecie(@PathVariable String species) {
+    try {
+        List<Animal> animais = repository.findByEspecie(species); // Chama o repositório
+        if (animais.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        }
+        return ResponseEntity.ok(animais);
+    } catch (Exception e) {
+        e.printStackTrace(); // Registra o erro para análise
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+    }
+}
+
 }
