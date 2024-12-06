@@ -324,6 +324,38 @@ footer {
         font-size: 20px; /* Ajusta o tamanho do ícone em telas menores */
     }
 
+    .btn-filter-add {
+    background-color: #008CBA; /* Azul vibrante */
+    color: white; /* Texto em branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    margin: 10px 5px; /* Espaço entre botões */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.btn-filter-add:hover {
+    background-color: #007B9E; /* Cor mais escura ao passar o mouse */
+}
+
+.btn-filter-remove {
+    background-color: #f44336; /* Vermelho vibrante */
+    color: white; /* Texto em branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    margin: 10px 5px; /* Espaço entre botões */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.btn-filter-remove:hover {
+    background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
+}
+
     /* Media Query para dispositivos móveis em pé */
     @media (max-width: 400px) and (orientation: portrait) {
         header {
