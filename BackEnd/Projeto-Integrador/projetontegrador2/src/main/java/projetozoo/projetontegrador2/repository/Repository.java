@@ -5,4 +5,5 @@ import projetozoo.projetontegrador2.model.Animal;
 
 @org.springframework.stereotype.Repository
 public interface Repository extends JpaRepository<Animal, Long> {
+   List<Animal> findByEspecie(String especie);
 }
