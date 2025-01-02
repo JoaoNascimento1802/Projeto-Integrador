@@ -1,6 +1,6 @@
 ## 🏞️ ZOO
 
-> Este é um projeto de uma API de CRUD para um zoológico, desenvolvida em Spring Boot. A aplicação permite adicionar, visualizar, atualizar e remover registros de animais em um zoológico.
+> Este é um projeto de uma API de CRUD para um zoológico, desenvolvida em Spring Boot. A aplicação permite adicionar, visualizar, atualizar e remover registros de animais em um sistema de zoológico.
 
 
 ## 💻 Pré-requisitos
