@@ -1,41 +1,88 @@
-## 🏞️ ZOO
+# Projeto Integrador
 
-> Este é um projeto de uma API de CRUD para um zoológico, desenvolvida em Spring Boot. A aplicação permite adicionar, visualizar, atualizar e remover registros de animais em um sistema de zoológico.
+![GitHub repo size](https://img.shields.io/github/repo-size/JoaoNascimento1802/Projeto-Integrador?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/JoaoNascimento1802/Projeto-Integrador?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/JoaoNascimento1802/Projeto-Integrador?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/JoaoNascimento1802/Projeto-Integrador?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/JoaoNascimento1802/Projeto-Integrador?style=for-the-badge)
 
+> Projeto desenvolvido como parte do **Projeto Integrador**, abordando conceitos de desenvolvimento web e programação.
 
 ## 💻 Pré-requisitos
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
+Antes de começar, verifique se você atende aos seguintes requisitos:
 
-- Você instalou a versão mais recente do `<Java>`.
-- Você tem uma máquina `<Windows / Linux / Mac>`.
+- Um navegador atualizado (Google Chrome, Firefox, Edge).
+- Um editor de código (VS Code, Sublime Text, etc.).
+- Node.js instalado (caso seja necessário rodar scripts no terminal).
 
-## 🚀 Instalando <Projeto-Integrador>
+## 🚀 Instalando Projeto Integrador
 
-Para instalar o <Projeto-Integrador>, siga estas etapas:
+Para instalar o **Projeto Integrador**, siga estas etapas:
 
-Linux e macOS:
+### Linux e macOS:
 
-```
-<[cd Downloads]>
-<[git clone https://github.com/JoaoNascimento1802/Projeto-Integrador]>
-```
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/JoaoNascimento1802/Projeto-Integrador.git
+    ```
 
-Windows:
+### Windows:
 
-```
-<[cd Downloads]>
-<[git clone https://github.com/JoaoNascimento1802/Projeto-Integrador]>
-```
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/JoaoNascimento1802/Projeto-Integrador.git
+    ```
 
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd Projeto-Integrador
+    ```
 
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Forneça uma referência de opções para pontos de bônus!
+3. Caso haja dependências, instale-as com:
+    ```bash
+    npm install
+    ```
+
+## ☕ Usando Projeto Integrador
+
+Para rodar o projeto, siga estas etapas:
+
+1. Caso o projeto tenha um arquivo `index.html`, basta abri-lo no navegador.
+2. Se for necessário executar um script JavaScript no terminal, utilize:
+    ```bash
+    node nome-do-arquivo.js
+    ```
+
+## 📫 Contribuindo para Projeto Integrador
+
+Para contribuir com **Projeto Integrador**, siga estas etapas:
+
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_branch>`
+5. Crie a solicitação de pull.
+
+Para mais detalhes, veja a documentação do GitHub sobre [como criar uma pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 ## 🤝 Colaboradores
 
-Criado por João Emanuel e Bernardo de oliveira para um projeto do SENAI.
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
+<table>
+  <tr>
+    <td align="center">
+      <a href="#" title="https://github.com/JoaoNascimento1802">
+        <img src="https://i.pinimg.com/736x/6d/83/b9/6d83b96e6f062c57dcbeb3e325ebcd10.jpg" width="100px;" alt="Foto do Emanuel no GitHub"/><br>
+        <sub>
+          <b>Emanuel</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+Este projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
