@@ -81,6 +81,16 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
   </tr>
+     <tr>
+    <td align="center">
+      <a href="#" title="https://github.com/DevBernardo-Oliveira">
+        <img src="https://avatars.githubusercontent.com/u/184015268?v=4" width="100px;" alt="Foto do Bernardo no GitHub"/><br>
+        <sub>
+          <b>Bernardo</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
 </table>
 
 ## 📝 Licença
